@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<palette_item version="1.0">
+  <component classname="com.raven.datechooser.DateChooser" />
+  <classpath>
+      <resource type="jar" name="C:\Users\Mary\Downloads\datechooser.jar" />
+  </classpath>
+</palette_item>
