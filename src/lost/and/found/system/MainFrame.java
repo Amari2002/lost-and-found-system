@@ -85,7 +85,7 @@ public class MainFrame extends javax.swing.JFrame {
             pst.setString(4, description);
             pst.executeUpdate();
 
-            JOptionPane.showMessageDialog(null, "Item inserted successfully!");
+            JOptionPane.showMessageDialog(null, "Item moved to Found Items");
             conn.close();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
