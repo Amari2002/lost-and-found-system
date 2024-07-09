@@ -137,7 +137,7 @@ public class FoundFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
 /**
- * Loads data from both tblitems and tblfound tables and populates the table.
+ * Loads data from tblfound tables and populates the table.
  */
 public void loadData() {
     try {
@@ -154,7 +154,8 @@ public void loadData() {
 
         DefaultTableModel model = new DefaultTableModel(new String[]{"Date", "Item Name", "Description"}, 0);
         jTable1.setModel(model);
-
+        
+        /*
         // Add items from tblitems
         while (rsItems.next()) {
             int id = rsItems.getInt("id");
@@ -163,7 +164,8 @@ public void loadData() {
             String description = rsItems.getString("description");
             model.addRow(new Object[]{date, itemName, description});
         }
-
+        */
+        
         // Add items from tblfound
         String sqlFound = "SELECT * FROM tblfound";
         PreparedStatement pstFound = conn.prepareStatement(sqlFound);
